@@ -12,7 +12,7 @@ public class CuentaNequi {
     private String numeroCuenta;
     private double saldo;
     private Banco banco;
-    private List<MovimientosNequi> movimientos;
+    private List<MovimientosNequi> movimientos; // Agregación por ahora, en constructor se confirma la composición
 
     // --- NUEVOS ATRIBUTOS ---
     private double deuda;       // deuda total (préstamos)
@@ -23,7 +23,7 @@ public class CuentaNequi {
         this.numeroCuenta = numeroCuenta;
         this.saldo = saldo;
         this.banco = banco;
-        this.movimientos = new ArrayList<>();
+        this.movimientos = new ArrayList<>(); //Composición
         this.deuda = 0;
         this.colchon = 0;
     }

@@ -3,12 +3,12 @@ package com.mycompany.nequi;
 /**
  * Clase UsuarioNequi:
  * Representa al usuario del sistema.
- * Relación: Asociación -> un Usuario tiene una CuentaNequi.
+ * Relación: Agregacion -> un Usuario tiene una CuentaNequi.
  */
 public class UsuarioNequi {
     private String nombre;
     private String cedula;
-    private CuentaNequi cuenta; // Asociación: un usuario está ligado a una cuenta
+    private CuentaNequi cuenta; // Agregación: un usuario se le agrega una cuenta
 
     // Constructor: recibimos datos del usuario y su cuenta (puede pasarse null si no tiene)
     public UsuarioNequi(String nombre, String cedula, CuentaNequi cuenta) {
